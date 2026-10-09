@@ -26,7 +26,7 @@ body {
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 button, a, input, select, summary {
@@ -101,7 +101,7 @@ img, svg {
   background: var(--green);
   color: #f3f4ed;
   letter-spacing: 0.2px;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .welcome-inner {
@@ -148,7 +148,7 @@ img, svg {
 .brand > span {
   font-family: var(--serif);
   letter-spacing: -0.5px;
-  font-size: 27px;
+  font-size: 30px;
   line-height: 1.1;
 }
 
@@ -156,7 +156,7 @@ img, svg {
   font-family: var(--sans);
   letter-spacing: 1.5px;
   margin-top: 8px;
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 550;
   display: block;
 }
@@ -166,7 +166,7 @@ img, svg {
   align-items: center;
   gap: 25px;
   margin-left: auto;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
 }
 
@@ -202,7 +202,7 @@ img, svg {
   align-items: center;
   gap: 16px;
   padding: 16px 23px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 550;
   line-height: 1.3;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
@@ -264,7 +264,7 @@ img, svg {
   color: var(--green);
   align-items: center;
   gap: 12px;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 650;
   line-height: 1.7;
   display: flex;
@@ -289,7 +289,7 @@ h1, h2, h3 {
 h1 {
   letter-spacing: -2px;
   margin: 23px 0;
-  font-size: clamp(56px, 5.4vw, 78px);
+  font-size: clamp(64px, 6vw, 88px);
   line-height: 1.06;
 }
 
@@ -302,7 +302,7 @@ em {
 .hero-copy > p {
   color: #6c756b;
   max-width: 450px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
@@ -320,7 +320,7 @@ em {
   align-items: center;
   gap: 12px;
   padding: 0;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   transition: gap 0.2s;
   display: inline-flex;
@@ -335,7 +335,7 @@ em {
   align-items: center;
   gap: 12px;
   margin-top: 34px;
-  font-size: 10px;
+  font-size: 13px;
   display: flex;
 }
 
@@ -355,7 +355,7 @@ em {
   align-items: center;
   gap: 8px;
   margin-top: 5px;
-  font-size: 9px;
+  font-size: 12px;
   display: flex;
 }
 
@@ -418,7 +418,7 @@ em {
 
 .hero-stamp span {
   color: #6c756b;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
@@ -441,7 +441,7 @@ em {
 .quote-mark {
   font-family: var(--serif);
   color: #adb69b;
-  font-size: 44px;
+  font-size: 47px;
   line-height: 1;
   position: absolute;
   top: 10px;
@@ -452,7 +452,7 @@ em {
   font-family: var(--serif);
   color: #445a43;
   padding: 0 0 0 13px;
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.35;
   position: relative;
 }
@@ -462,14 +462,14 @@ em {
   color: #838c7b;
   margin-top: 11px;
   margin-left: 13px;
-  font-size: 7px;
+  font-size: 11px;
   display: block;
 }
 
 .image-caption {
   color: #82897b;
   letter-spacing: 0.1px;
-  font-size: 7px;
+  font-size: 11px;
   position: absolute;
   bottom: -19px;
   right: 15px;
@@ -499,19 +499,19 @@ em {
 .prayer-header .eyebrow {
   letter-spacing: 1.7px;
   margin-bottom: 5px;
-  font-size: 7px;
+  font-size: 11px;
 }
 
 .prayer-header h2 {
   letter-spacing: -0.3px;
-  font-size: 27px;
+  font-size: 30px;
 }
 
 .prayer-date {
   color: #75806d;
   align-items: center;
   gap: 9px;
-  font-size: 10px;
+  font-size: 13px;
   display: flex;
 }
 
@@ -551,7 +551,7 @@ em {
   color: #65765c;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 550;
   display: flex;
 }
@@ -562,7 +562,7 @@ em {
   white-space: nowrap;
   min-height: 37px;
   margin: 13px 0 9px;
-  font-size: 33px;
+  font-size: 36px;
   line-height: 1.1;
 }
 
@@ -570,13 +570,13 @@ em {
   font-family: var(--sans);
   color: #728069;
   margin-left: 5px;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .iqama {
   color: #858b7e;
   white-space: nowrap;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .prayer-footer {
@@ -585,7 +585,7 @@ em {
   align-items: center;
   gap: 16px;
   padding: 14px 29px;
-  font-size: 9px;
+  font-size: 12px;
   display: flex;
 }
 
@@ -611,11 +611,11 @@ em {
 .prayer-source {
   color: #8b9085;
   margin-left: auto;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .prayer-footer .text-link {
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .skeleton {
@@ -668,7 +668,7 @@ em {
   align-items: center;
   gap: 8px;
   padding: 12px 15px;
-  font-size: 7px;
+  font-size: 11px;
   font-weight: 600;
   display: flex;
   position: absolute;
@@ -678,7 +678,7 @@ em {
 
 h2 {
   letter-spacing: -0.8px;
-  font-size: 44px;
+  font-size: 47px;
   line-height: 1.14;
 }
 
@@ -690,7 +690,7 @@ h2 {
   color: #777d70;
   max-width: 440px;
   margin-top: 13px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
@@ -707,7 +707,7 @@ h2 {
   color: #596d51;
   align-items: center;
   gap: 9px;
-  font-size: 10px;
+  font-size: 13px;
   display: flex;
 }
 
@@ -753,13 +753,13 @@ h2 {
 
 .section-heading h2 {
   margin-top: 14px;
-  font-size: 42px;
+  font-size: 45px;
 }
 
 .section-heading > p {
   color: #7a8271;
   margin-bottom: 5px;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.9;
 }
 
@@ -813,7 +813,7 @@ h2 {
 .program-category {
   letter-spacing: 1.3px;
   color: #829174;
-  font-size: 6px;
+  font-size: 10px;
   font-weight: 650;
   line-height: 1.5;
 }
@@ -821,13 +821,13 @@ h2 {
 .program-card h3 {
   letter-spacing: -0.3px;
   margin: 7px 0 8px;
-  font-size: 25px;
+  font-size: 28px;
   line-height: 1.1;
 }
 
 .program-card p {
   color: #808675;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -869,7 +869,7 @@ h2 {
 .calendar-event h3 {
   font-family: var(--serif);
   margin: 8px 0;
-  font-size: 30px;
+  font-size: 33px;
 }
 
 .calendar-event time {
@@ -888,7 +888,7 @@ h2 {
 .calendar-note {
   max-width: 800px;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* Community */
@@ -912,7 +912,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  font-size: 8px;
+  font-size: 12px;
   display: flex;
 }
 
@@ -922,25 +922,25 @@ h2 {
   background: #eaf0e2;
   border-radius: 2px;
   padding: 5px 8px;
-  font-size: 6px;
+  font-size: 10px;
   font-weight: 650;
 }
 
 .notice-card h3 {
   margin: 19px 0 10px;
-  font-size: 30px;
+  font-size: 33px;
 }
 
 .notice-card p {
   color: #7a8073;
   max-width: 430px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
 .notice-card .text-link {
   margin-top: 21px;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .community-note {
@@ -950,7 +950,7 @@ h2 {
   gap: 12px;
   margin-top: 33px;
   padding-top: 21px;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.8;
   display: flex;
 }
@@ -984,7 +984,7 @@ h2 {
   border-top: 1px solid #d9dfcf;
   margin-top: 20px;
   padding-top: 16px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .water-links {
@@ -1010,7 +1010,7 @@ h2 {
 
 .donation-panel .eyebrow {
   color: #bccdae;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .donation-copy,
@@ -1021,7 +1021,7 @@ h2 {
 .donation-panel h2 {
   color: #fffdf1;
   margin: 15px 0 17px;
-  font-size: 47px;
+  font-size: 50px;
 }
 
 .donation-panel h2 em {
@@ -1031,7 +1031,7 @@ h2 {
 .donation-panel p {
   color: #cfdbca;
   max-width: 380px;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.9;
 }
 
@@ -1044,7 +1044,7 @@ h2 {
 
 .donation-action > span:last-child {
   color: #bdd0b5;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .button-light {
@@ -1093,7 +1093,7 @@ h2 {
 .contact-copy > p {
   color: #7b8274;
   max-width: 370px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
@@ -1124,13 +1124,13 @@ h2 {
   letter-spacing: 1.5px;
   color: #8c9582;
   margin-bottom: 8px;
-  font-size: 7px;
+  font-size: 11px;
   display: block;
 }
 
 .contact-details strong {
   color: #506348;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   display: block;
 }
@@ -1138,7 +1138,7 @@ h2 {
 .contact-details a div span {
   color: #8b9182;
   margin-top: 7px;
-  font-size: 10px;
+  font-size: 13px;
   display: block;
 }
 
@@ -1153,7 +1153,7 @@ summary {
   justify-content: space-between;
   align-items: center;
   padding: 17px 0;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   list-style: none;
   display: flex;
@@ -1174,7 +1174,7 @@ details[open] summary svg {
 details p {
   color: #7c8571;
   padding-bottom: 20px;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.9;
 }
 
@@ -1192,18 +1192,18 @@ details p {
 }
 
 .footer-main .brand > span {
-  font-size: 24px;
+  font-size: 27px;
 }
 
 .footer-main p {
   font-family: var(--serif);
   color: #76846b;
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.4;
 }
 
 .footer-main .text-link {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .up-arrow {
@@ -1214,7 +1214,7 @@ details p {
   color: #8a927f;
   border-top: 1px solid #e0e5d6;
   padding-block: 20px;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .footer-bottom-inner {
@@ -1256,19 +1256,19 @@ details p {
 
 .dialog-content h2 {
   margin: 13px 0 20px;
-  font-size: 42px;
+  font-size: 45px;
 }
 
 .dialog-content > p {
   color: #76816c;
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
 .dialog-content .eyebrow {
   padding-right: 20px;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .dialog-content .button {
@@ -1277,7 +1277,7 @@ details p {
 
 .field-label {
   margin: 20px 0 9px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 550;
   display: block;
 }
@@ -1300,7 +1300,7 @@ select {
   gap: 8px;
   margin-top: 16px;
   padding: 12px;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
 }
 
@@ -1314,7 +1314,7 @@ select {
 .copy-status {
   color: #7c8c70;
   margin-top: 8px;
-  font-size: 9px;
+  font-size: 12px;
   display: block;
 }
 
@@ -1328,18 +1328,18 @@ select {
 }
 
 .donation-instructions strong {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 550;
 }
 
 .donation-instructions p {
   color: #77836b;
   margin-top: 7px;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .dialog-content .small-text {
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.8;
   color: #77836b;
 }
@@ -1364,79 +1364,79 @@ select {
 @media (max-width: 1150px) {
   .container { width: calc(100% - 64px); }
   .nav-inner { gap: 18px; }
-  .main-nav { gap: 16px; font-size: 11px; }
-  .brand > span { font-size: 24px; }
-  .brand small { font-size: 6px; }
+  .main-nav { gap: 16px; font-size: 14px; }
+  .brand > span { font-size: 27px; }
+  .brand small { font-size: 10px; }
   .brand svg { width: 36px; }
   .hero { gap: 40px; }
   .hero-actions { gap: 17px; }
   .hero-art { padding-left: 15px; }
   .hero-arch { height: 408px; }
   .verse-card { left: -20px; }
-  .verse-card p { font-size: 17px; }
+  .verse-card p { font-size: 20px; }
   .hero-stamp { right: -10px; }
   .about-section { gap: 45px; }
   .prayer-card { padding: 15px 10px; }
-  .prayer-time { font-size: 29px; }
-  .prayer-label { gap: 6px; font-size: 10px; }
+  .prayer-time { font-size: 32px; }
+  .prayer-label { gap: 6px; font-size: 13px; }
   .program-card { gap: 15px; padding: 22px 19px; }
   .program-icon { width: 48px; height: 48px; }
-  .program-card h3 { font-size: 23px; }
+  .program-card h3 { font-size: 26px; }
   .contact-section { gap: 70px; }
 }
 
 @media (max-width: 950px) {
-  .main-nav { gap: 12px; font-size: 10px; }
+  .main-nav { gap: 12px; font-size: 13px; }
   .nav-inner { gap: 13px; height: 85px; }
-  .brand > span { font-size: 22px; }
-  .brand small { letter-spacing: 1.2px; font-size: 5.5px; }
-  .nav-donate { gap: 7px; padding: 10px 13px; font-size: 10px; }
+  .brand > span { font-size: 25px; }
+  .brand small { letter-spacing: 1.2px; font-size: 10px; }
+  .nav-donate { gap: 7px; padding: 10px 13px; font-size: 13px; }
   .hero { gap: 30px; padding-top: 46px; padding-bottom: 46px; }
-  h1 { font-size: 59px; }
+  h1 { font-size: 62px; }
   .hero-actions { flex-direction: column; align-items: flex-start; gap: 19px; }
   .hero-arch { height: 400px; }
-  .hero-stamp { padding: 11px; font-size: 8px; }
+  .hero-stamp { padding: 11px; font-size: 12px; }
   .hero-art { padding-right: 8px; }
   .verse-card { padding: 20px 16px 15px; left: -22px; }
-  .verse-card p { font-size: 16px; }
-  .hero-copy > p { font-size: 12px; }
-  .hero-location { margin-top: 25px; font-size: 9px; }
-  .hero-location a { font-size: 8px; }
+  .verse-card p { font-size: 19px; }
+  .hero-copy > p { font-size: 15px; }
+  .hero-location { margin-top: 25px; font-size: 12px; }
+  .hero-location a { font-size: 12px; }
   .prayer-grid { gap: 6px; padding-inline: 15px; }
   .prayer-card { padding: 13px 8px; }
-  .prayer-time { font-size: 27px; }
-  .iqama { font-size: 7px; }
+  .prayer-time { font-size: 30px; }
+  .iqama { font-size: 11px; }
   .prayer-footer { padding-inline: 22px; }
   .prayer-source { display: none; }
   .prayer-footer .text-link { margin-left: auto; }
   .about-section { gap: 35px; }
-  h2, .section-heading h2 { font-size: 37px; }
+  h2, .section-heading h2 { font-size: 40px; }
   .about-values { gap: 15px; }
-  .about-values span { font-size: 9px; }
+  .about-values span { font-size: 12px; }
   .section-space { padding-block: 70px; }
   .program-card { gap: 13px; padding: 22px 16px; }
   .program-icon { width: 43px; height: 43px; }
-  .program-category { font-size: 5px; }
-  .program-card h3 { font-size: 22px; }
-  .program-card p { font-size: 9px; }
+  .program-category { font-size: 10px; }
+  .program-card h3 { font-size: 25px; }
+  .program-card p { font-size: 12px; }
   .program-arrow { width: 17px; }
   .donation-panel { padding: 45px 38px; }
-  .donation-panel h2 { font-size: 42px; }
+  .donation-panel h2 { font-size: 45px; }
   .contact-section { gap: 50px; }
-  .notice-card h3 { font-size: 28px; }
+  .notice-card h3 { font-size: 31px; }
 }
 
 @media (max-width: 760px) {
   html { scroll-padding-top: 25px; }
   .container { width: calc(100% - 40px); }
-  .welcome-inner { font-size: 10px; }
+  .welcome-inner { font-size: 13px; }
   .welcome-secondary { display: none; }
-  .welcome-inner a { font-size: 9px; }
+  .welcome-inner a { font-size: 12px; }
   .nav-inner { gap: 16px; height: 80px; }
-  .brand > span { font-size: 25px; }
-  .brand small { font-size: 6px; }
+  .brand > span { font-size: 28px; }
+  .brand small { font-size: 10px; }
   .brand svg { width: 36px; }
-  .nav-donate { margin-left: auto; padding: 11px 15px; font-size: 11px; }
+  .nav-donate { margin-left: auto; padding: 11px 15px; font-size: 14px; }
   .menu-toggle { display: inline-flex; }
   .main-nav {
     background: var(--cream);
@@ -1453,112 +1453,112 @@ select {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
   }
   .main-nav a { padding-block: 12px; }
   .main-nav a.active:after { display: none; }
   .hero { grid-template-columns: 1fr; gap: 35px; padding-top: 43px; padding-bottom: 45px; }
   .hero-copy { padding-bottom: 0; }
-  .eyebrow { letter-spacing: 1.8px; font-size: 8px; }
-  h1 { margin-top: 20px; margin-bottom: 19px; font-size: clamp(53px, 9.5vw, 73px); }
-  .hero-copy > p { max-width: 470px; font-size: 13px; }
+  .eyebrow { letter-spacing: 1.8px; font-size: 12px; }
+  h1 { margin-top: 20px; margin-bottom: 19px; font-size: clamp(60px, 10vw, 82px); }
+  .hero-copy > p { max-width: 470px; font-size: 16px; }
   .hero-actions { flex-direction: row; align-items: center; gap: 23px; margin-top: 24px; }
-  .hero-location { font-size: 10px; }
-  .hero-location a { font-size: 9px; }
+  .hero-location { font-size: 13px; }
+  .hero-location a { font-size: 12px; }
   .hero-art { width: min(430px, 90%); margin: 5px auto 0; padding-left: 20px; padding-right: 15px; }
   .hero-arch { height: 410px; }
   .hero-stamp { padding: 14px 16px; top: 40px; right: -15px; }
-  .hero-stamp span { font-size: 9px; }
+  .hero-stamp span { font-size: 12px; }
   .verse-card { padding: 20px 22px 15px; bottom: 2px; left: -12px; }
-  .verse-card p { font-size: 19px; }
-  .image-caption { font-size: 6px; bottom: -15px; }
+  .verse-card p { font-size: 22px; }
+  .image-caption { font-size: 10px; bottom: -15px; }
   .prayer-section { padding-top: 10px; }
   .prayer-header { align-items: flex-start; padding: 23px 18px; }
-  .prayer-header h2 { font-size: 26px; }
-  .prayer-date { flex-wrap: wrap; justify-content: flex-end; gap: 5px; max-width: 160px; font-size: 8px; }
+  .prayer-header h2 { font-size: 29px; }
+  .prayer-date { flex-wrap: wrap; justify-content: flex-end; gap: 5px; max-width: 160px; font-size: 12px; }
   .date-navigation { margin-left: 0; }
   .prayer-grid { padding-inline: 15px; grid-template-columns: repeat(3, 1fr); gap: 9px; padding-bottom: 16px; }
   .prayer-card { padding: 15px 12px; }
-  .prayer-label { gap: 7px; font-size: 11px; }
-  .prayer-time { font-size: 34px; }
-  .iqama { font-size: 8px; }
+  .prayer-label { gap: 7px; font-size: 14px; }
+  .prayer-time { font-size: 37px; }
+  .iqama { font-size: 12px; }
   .prayer-footer { flex-wrap: wrap; gap: 15px; padding: 15px 18px; }
-  .friday-note { gap: 6px; font-size: 8px; }
-  .prayer-footer .text-link { font-size: 9px; }
+  .friday-note { gap: 6px; font-size: 12px; }
+  .prayer-footer .text-link { font-size: 12px; }
   .section-space { padding-top: 58px; padding-bottom: 58px; }
   .about-section { grid-template-columns: 1fr; gap: 31px; }
   .about-image { height: 340px; }
   .about-copy { padding-inline: 4px; }
-  h2, .section-heading h2 { font-size: 40px; }
-  .about-copy > p { max-width: none; font-size: 12px; }
+  h2, .section-heading h2 { font-size: 43px; }
+  .about-copy > p { max-width: none; font-size: 15px; }
   .about-values { gap: 30px; }
-  .about-values span { font-size: 11px; }
-  .about-copy .text-link { font-size: 12px; }
+  .about-values span { font-size: 14px; }
+  .about-copy .text-link { font-size: 15px; }
   .section-heading { flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 27px; }
-  .section-heading > p { font-size: 12px; }
+  .section-heading > p { font-size: 15px; }
   .section-heading > p br { display: none; }
   .program-grid { grid-template-columns: 1fr; gap: 12px; }
   .program-card { padding: 24px 20px; }
   .program-icon { width: 54px; height: 54px; }
-  .program-category { font-size: 6px; }
-  .program-card h3 { font-size: 27px; }
-  .program-card p { font-size: 11px; }
+  .program-category { font-size: 10px; }
+  .program-card h3 { font-size: 30px; }
+  .program-card p { font-size: 14px; }
   .program-arrow { width: 22px; }
   .programs-section .section-space { padding-block: 55px; }
   .notice-grid { grid-template-columns: 1fr; gap: 31px; }
-  .notice-card h3 { font-size: 31px; }
+  .notice-card h3 { font-size: 34px; }
   .notice-card p { max-width: none; }
-  .notice-card .text-link { font-size: 11px; }
-  .notice-top { font-size: 9px; }
-  .community-note { align-items: flex-start; font-size: 10px; }
+  .notice-card .text-link { font-size: 14px; }
+  .notice-top { font-size: 12px; }
+  .community-note { align-items: flex-start; font-size: 13px; }
   .donation-panel { grid-template-columns: 1fr; gap: 27px; padding: 35px 30px; }
-  .donation-panel h2 { font-size: 43px; }
-  .donation-panel p { max-width: none; font-size: 12px; }
+  .donation-panel h2 { font-size: 46px; }
+  .donation-panel p { max-width: none; font-size: 15px; }
   .donation-action { align-items: flex-start; gap: 13px; }
   .donation-heart { display: none; }
-  .donation-action > span:last-child { font-size: 9px; }
+  .donation-action > span:last-child { font-size: 12px; }
   .contact-section { grid-template-columns: 1fr; gap: 20px; }
   .contact-copy > p { max-width: none; }
   .contact-details > a { padding: 22px 0; }
-  .contact-details small { font-size: 8px; }
-  .contact-details strong { font-size: 15px; }
+  .contact-details small { font-size: 12px; }
+  .contact-details strong { font-size: 18px; }
   .footer-main { flex-wrap: wrap; gap: 25px; padding-block: 31px; }
   .footer-main .brand { width: 100%; }
-  .footer-main p { font-size: 18px; }
-  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 12px; font-size: 9px; }
+  .footer-main p { font-size: 21px; }
+  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 12px; font-size: 12px; }
   .dialog-content { padding: 45px 24px 28px; }
-  .dialog-content h2 { font-size: 37px; }
-  .copy-email { font-size: 11px; }
+  .dialog-content h2 { font-size: 40px; }
+  .copy-email { font-size: 14px; }
 }
 
 @media (max-width: 390px) {
   .container { width: calc(100% - 32px); }
-  .brand > span { font-size: 21px; }
-  .brand small { font-size: 5px; }
+  .brand > span { font-size: 24px; }
+  .brand small { font-size: 10px; }
   .brand { gap: 8px; }
   .brand svg { width: 30px; }
   .nav-inner { gap: 10px; }
-  .nav-donate { padding: 10px 12px; font-size: 10px; }
+  .nav-donate { padding: 10px 12px; font-size: 13px; }
   .hero-actions { gap: 18px; }
-  .hero-actions .button { padding: 14px 17px; font-size: 11px; }
-  .hero-actions .text-link { gap: 7px; font-size: 9px; }
-  h1 { font-size: 52px; }
+  .hero-actions .button { padding: 14px 17px; font-size: 14px; }
+  .hero-actions .text-link { gap: 7px; font-size: 12px; }
+  h1 { font-size: 55px; }
   .hero-arch { height: 350px; }
   .hero-stamp { padding: 10px; right: -13px; }
-  .verse-card p { font-size: 16px; }
+  .verse-card p { font-size: 19px; }
   .prayer-header { flex-direction: column; gap: 15px; }
   .prayer-date { justify-content: flex-start; max-width: none; }
   .date-navigation { margin-left: 8px; }
   .prayer-card { padding-inline: 9px; }
-  .prayer-time { font-size: 30px; }
-  .prayer-label { gap: 4px; font-size: 10px; }
-  .iqama { font-size: 7px; }
+  .prayer-time { font-size: 33px; }
+  .prayer-label { gap: 4px; font-size: 13px; }
+  .iqama { font-size: 11px; }
   .prayer-footer .text-link { margin-left: 0; }
   .program-card { gap: 12px; padding-inline: 15px; }
   .program-icon { width: 45px; height: 45px; }
-  .program-card h3 { font-size: 23px; }
-  .program-card p { font-size: 10px; }
+  .program-card h3 { font-size: 26px; }
+  .program-card p { font-size: 13px; }
   .about-image { height: 275px; }
 }
 
