@@ -559,6 +559,15 @@ em {
   display: flex;
 }
 
+.jumuah-card .prayer-label {
+  font-family: var(--serif);
+  color: var(--green);
+  letter-spacing: -0.3px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
 .jumuah-times {
   align-items: baseline;
   gap: 40px;
