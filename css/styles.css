@@ -1037,6 +1037,69 @@ h2 {
   display: flex;
 }
 
+/* Donate for Gaza */
+.gaza-section {
+  background: var(--sage);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 70px;
+  padding: 45px;
+  display: grid;
+}
+
+.gaza-section h2 {
+  margin: 14px 0 4px;
+}
+
+.gaza-section p {
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.9;
+}
+
+.gaza-section .gaza-note {
+  border-top: 1px solid #d9dfcf;
+  margin-top: 20px;
+  padding-top: 16px;
+  font-size: 15px;
+}
+
+.gaza-section .inline-link {
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.gaza-image {
+  background: var(--paper);
+  border-radius: 6px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.gaza-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s;
+}
+
+.gaza-image:hover img {
+  transform: scale(1.03);
+}
+
+.gaza-credit {
+  color: #8a9680;
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
 /* Donation */
 .donation-panel {
   background: var(--green);
@@ -1533,6 +1596,8 @@ select {
   .prayer-footer .text-link { font-size: 12px; }
   .section-space { padding-top: 58px; padding-bottom: 58px; }
   .about-section { grid-template-columns: 1fr; gap: 31px; }
+  .gaza-section { grid-template-columns: 1fr; gap: 31px; padding: 35px 30px; }
+  .gaza-image { height: 300px; }
   .about-image { height: 340px; }
   .about-copy { padding-inline: 4px; }
   h2, .section-heading h2 { font-size: 43px; }
