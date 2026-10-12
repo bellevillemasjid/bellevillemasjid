@@ -120,9 +120,11 @@
   let displayDate = new Date();
 
   function renderPrayerTimes() {
-    const times = calcPrayerTimes(displayDate);
     const grid = document.getElementById("prayer-grid");
     const dateLabel = document.getElementById("prayer-date");
+    if (!grid || !dateLabel) return;
+
+    const times = calcPrayerTimes(displayDate);
 
     dateLabel.textContent = formatDateLong(displayDate);
     grid.setAttribute("aria-busy", "false");
@@ -151,31 +153,40 @@
     });
   }
 
-  document.getElementById("prev-day").addEventListener("click", function () {
-    displayDate.setDate(displayDate.getDate() - 1);
-    renderPrayerTimes();
-  });
+  const prevDay = document.getElementById("prev-day");
+  const nextDay = document.getElementById("next-day");
 
-  document.getElementById("next-day").addEventListener("click", function () {
-    displayDate.setDate(displayDate.getDate() + 1);
-    renderPrayerTimes();
-  });
+  if (prevDay) {
+    prevDay.addEventListener("click", function () {
+      displayDate.setDate(displayDate.getDate() - 1);
+      renderPrayerTimes();
+    });
+  }
+
+  if (nextDay) {
+    nextDay.addEventListener("click", function () {
+      displayDate.setDate(displayDate.getDate() + 1);
+      renderPrayerTimes();
+    });
+  }
 
   /* ---------- Mobile navigation ---------- */
   const menuToggle = document.getElementById("menu-toggle");
   const mainNav = document.getElementById("main-nav");
 
-  menuToggle.addEventListener("click", function () {
-    const open = mainNav.classList.toggle("is-open");
-    menuToggle.setAttribute("aria-expanded", String(open));
-  });
-
-  mainNav.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-      mainNav.classList.remove("is-open");
-      menuToggle.setAttribute("aria-expanded", "false");
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+      const open = mainNav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", String(open));
     });
-  });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
 
   /* ---------- Scroll spy ---------- */
   const sections = ["prayer-times", "about", "programs", "islamic-calendar", "community", "contact"];
@@ -275,36 +286,38 @@
     }
   }
 
-  document.querySelectorAll("[data-dialog]").forEach(function (el) {
-    el.addEventListener("click", function () {
-      const key = el.getAttribute("data-dialog");
-      if (DIALOGS[key]) openDialog(DIALOGS[key]());
+  if (dialog && dialogContent) {
+    document.querySelectorAll("[data-dialog]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        const key = el.getAttribute("data-dialog");
+        if (DIALOGS[key]) openDialog(DIALOGS[key]());
+      });
     });
-  });
 
-  document.querySelectorAll("[data-program]").forEach(function (el) {
-    el.addEventListener("click", function () {
-      const key = el.getAttribute("data-program");
-      const info = PROGRAM_DIALOGS[key];
-      if (!info) return;
-      openDialog(
-        '<div class="eyebrow">OUR PROGRAMS</div>' +
-          "<h2>" + info.title + "</h2>" +
-          "<p>" + info.text + "</p>" +
-          '<a class="button" href="mailto:' + EMAIL + '?subject=' + encodeURIComponent(info.title) + '">Ask about this program</a>'
-      );
+    document.querySelectorAll("[data-program]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        const key = el.getAttribute("data-program");
+        const info = PROGRAM_DIALOGS[key];
+        if (!info) return;
+        openDialog(
+          '<div class="eyebrow">OUR PROGRAMS</div>' +
+            "<h2>" + info.title + "</h2>" +
+            "<p>" + info.text + "</p>" +
+            '<a class="button" href="mailto:' + EMAIL + '?subject=' + encodeURIComponent(info.title) + '">Ask about this program</a>'
+        );
+      });
     });
-  });
 
-  document.querySelectorAll("[data-dialog-close]").forEach(function (el) {
-    el.addEventListener("click", function () {
-      dialog.close();
+    document.querySelectorAll("[data-dialog-close]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        dialog.close();
+      });
     });
-  });
 
-  dialog.addEventListener("click", function (e) {
-    if (e.target === dialog) dialog.close();
-  });
+    dialog.addEventListener("click", function (e) {
+      if (e.target === dialog) dialog.close();
+    });
+  }
 
   /* ---------- Footer year ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();
