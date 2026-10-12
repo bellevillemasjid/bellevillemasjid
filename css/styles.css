@@ -1053,6 +1053,31 @@ h2 {
   display: block;
 }
 
+.learning-session + .learning-session {
+  border-top: 1px solid #d9dfcf;
+  margin-top: 32px;
+  padding-top: 26px;
+}
+
+.learning-session h2 {
+  margin: 0 0 12px;
+  font-size: 30px;
+}
+
+.event-detail .learning-gallery img {
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  background: var(--paper);
+}
+
+.learning-gallery figcaption {
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .event-detail .event-poster {
   margin: 22px 0;
   border: 1px solid #dfe4d6;
