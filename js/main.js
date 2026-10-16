@@ -343,6 +343,22 @@
     });
   }
 
+  document.querySelectorAll("[data-video-preview]").forEach(function (preview) {
+    const button = preview.querySelector("[data-video-src]");
+    if (!button) return;
+
+    button.addEventListener("click", function () {
+      const iframe = document.createElement("iframe");
+      iframe.src = button.getAttribute("data-video-src");
+      iframe.title = button.getAttribute("data-video-title");
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      preview.replaceChildren(iframe);
+    });
+  });
+
   /* ---------- Footer year ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();
 

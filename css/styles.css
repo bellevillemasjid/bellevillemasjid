@@ -1103,11 +1103,66 @@ h2 {
   font-weight: 650;
 }
 
+.event-detail .event-video {
+  aspect-ratio: 16 / 9;
+  margin-top: 24px;
+}
+
+.event-detail .event-video-preview {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: #1c211f;
+  cursor: pointer;
+}
+
+.event-detail .event-video-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-detail .video-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 68px;
+  height: 48px;
+  place-items: center;
+  border-radius: 14px;
+  background: #c00;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.2s;
+}
+
+.event-detail .event-video-preview:hover .video-play-icon,
+.event-detail .event-video-preview:focus-visible .video-play-icon {
+  background: #e00;
+}
+
+.event-detail .event-video iframe {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .event-detail .event-media {
   border-top: 1px solid #d9dfcf;
   margin-top: 22px;
   padding-top: 16px;
   font-size: 15px;
+}
+
+.event-detail .event-media .text-link {
+  margin-top: 0;
 }
 
 .event-detail .speaker-list {
