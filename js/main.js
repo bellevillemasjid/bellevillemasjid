@@ -113,6 +113,19 @@
     }).format(date);
   }
 
+  function isDaylightSavingTime(date) {
+    const zone = new Intl.DateTimeFormat("en-US", {
+      timeZone: TZ,
+      timeZoneName: "short",
+    }).formatToParts(date).find((part) => part.type === "timeZoneName");
+
+    if (!zone || (zone.value !== "EDT" && zone.value !== "EST")) {
+      throw new Error("Could not determine Eastern Time daylight-saving status.");
+    }
+
+    return zone.value === "EDT";
+  }
+
   /* ---------- Prayer times widget ---------- */
   const PRAYER_NAMES = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"];
   const ACTUAL_PRAYERS = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
@@ -125,6 +138,17 @@
     if (!grid || !dateLabel) return;
 
     const times = calcPrayerTimes(displayDate);
+    const khutbaTime = document.getElementById("jumuah-khutba-time");
+    const salatTime = document.getElementById("jumuah-salat-time");
+    if (khutbaTime && salatTime) {
+      const schedule = isDaylightSavingTime(displayDate)
+        ? { khutba: "1:30 PM", khutbaValue: "13:30", salat: "2:00 PM", salatValue: "14:00" }
+        : { khutba: "1:00 PM", khutbaValue: "13:00", salat: "1:30 PM", salatValue: "13:30" };
+      khutbaTime.textContent = schedule.khutba;
+      khutbaTime.setAttribute("datetime", schedule.khutbaValue);
+      salatTime.textContent = schedule.salat;
+      salatTime.setAttribute("datetime", schedule.salatValue);
+    }
 
     dateLabel.textContent = formatDateLong(displayDate);
     grid.setAttribute("aria-busy", "false");
